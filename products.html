@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="header">
+        <div class="login-header">
+            <div class="left-head">
+                <img src="	https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="head-img">
+                <div class="head">Kafene</div>
+            </div>
+            <div class="head-list">
+                <a href="./orders.html">Orders</a>
+                <a href="#" class="active-header">Products</a>
+                <a href="/users.html">Users</a>
+            </div>
+        </div>
+        <div class="logout-containor">
+            <a href="./index.html" onclick="logout()">Logout</a>
+        </div>
+    </section>
+    <section class="products-page">
+        <div class="products-head">Products</div>
+        <div class="products-sections">
+            <div class="left-section">
+                <div class="products-filters">Filters</div>
+                <div class="products-count">
+                    <p>Count:</p> 
+                    <div class="product-count-nos" id="productCount">0</div>
+                </div>
+                <div class="filter-categories filter-product-categories">
+                    <label class="filter-catogry" for="Expired"><input type="checkbox" id="Expired" checked>Expired</label>
+                    <label class="filter-catogry" for="LowStock"><input type="checkbox" id="LowStock" checked> LowStock</label>
+                </div>
+            </div>
+            <div class="right-section">
+                <table class="products-table">
+                    <tr class="product-table-head">
+                        <th>ID</th>
+                        <th>Product Name</th>
+                        <th>Product Brand</th>
+                        <th>Expiry Date</th>
+                        <th>Unit Price</th>
+                        <th>Stock</th>
+                    </tr>
+                    <tbody class="table-data-containor" id="productTableData">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

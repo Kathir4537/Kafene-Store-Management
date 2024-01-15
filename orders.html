@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="header">
+        <div class="login-header">
+            <div class="left-head">
+                <img src="	https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="head-img">
+                <div class="head">Kafene</div>
+            </div>
+            <div class="head-list">
+                <a href="#" class="active-header">Orders</a>
+                <a href="./products.html">Products</a>
+                <a href="/users.html">Users</a>
+            </div>
+        </div>
+        <div class="logout-containor">
+            <a href="./index.html" onclick="logout()">Logout</a>
+        </div>
+    </section>
+    <section class="orders-page">
+        <div class="orders-head">Orders</div>
+        <div class="orders-sections">
+            <div class="left-section">
+                <div class="orders-filters">Filters</div>
+                <div class="orders-count">
+                    <p>Count:</p> 
+                    <div class="order-count-nos" id="orderCount">0</div>
+                </div>
+                <div class="filter-order-categories filter-categories">
+                    <label class="filter-catogry" id="newbox"><input type="checkbox" value="New" checked> New</label>
+                    <label class="filter-catogry" id="packedbox"><input type="checkbox" value="Packed" checked> Packed</label>
+                    <label class="filter-catogry" id=" intransitbox"><input type="checkbox" value="InTransit" checked> InTransit</label>
+                    <label class="filter-catogry" id=" deliveredbox"><input type="checkbox" value="Delivered" checked> Delivered</label>
+                  </div>
+            </div>
+            <div class="right-section">
+                <table class="orders-table">
+                    <tr class="order-table-head">
+                        <th>ID</th>
+                        <th>Customer</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                    <tbody class="table-data-containor" id="orderTableData">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
